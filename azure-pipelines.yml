@@ -18,7 +18,5 @@ steps:
 - task: Npm@1
   inputs:
      command: 'install'
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+- script: npx mocha
+- script: npm install -g @angular/cli
