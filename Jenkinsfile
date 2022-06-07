@@ -18,5 +18,10 @@ pipeline {
         }
     }
 
-    
+    post{
+        success{
+            archive '**/*.tgz'
+        }
+    }
+
 }
